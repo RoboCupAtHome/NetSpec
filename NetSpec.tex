@@ -37,6 +37,26 @@
 
 \input{./pages/titlepage}
 
+\chapter{Considerations for the TC}
+When elaborating the network requirements please consider 14 teams in all 3 leagues.
+Although leagues saturate with 12 teams it is desirable to have some padding just in case.
+Also, is important to consider that the average number of participants per team is 8 + 1.2 robots, although in the past we have had teams with up to 22 participants.
+
+
+Please consider the following elements:
+\begin{enumerate}
+	\item Average and peak LAN bandwidth
+	\item Average and peak Internet bandwidth
+	\item WiFi technology and standard (e.g.~802.11ac in the 5GHz band)
+	\item Number of channels to support
+	\item WiFi coverage inside the arena
+	\item Ping times
+	\item Number of required VLANs (encryption must be done by hardware)
+	\item Number of required switches
+	\item Type and location of the desired WiFi antennas
+	\item @Home must not interfere with simulation leagues
+\end{enumerate}
+
 \input{guidelines.tex}
 
 \end{document}
