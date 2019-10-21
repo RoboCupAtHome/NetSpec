@@ -1,0 +1,10 @@
+# Ignore everything
+*-
+# But these files
+!.gitignore
+!.gitattributes
+!Makefile
+# And this file types
+!*.tex
+# Even if they are in subdirectories
+!*/

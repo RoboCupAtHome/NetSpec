@@ -1,0 +1,13 @@
+# Ignore everything
+*-
+# But these files
+!.gitignore
+!.gitattributes
+!Makefile
+# And this file types
+!*.eps
+!*.jpg
+!*.pdf
+!*.png
+# Even if they are in subdirectories
+!*/
