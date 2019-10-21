@@ -11,23 +11,26 @@
 \newcommand{\footline}{RoboCup@Home Network Specs / \netspecVersion}
 \pagestyle{fancy}
 \renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter. \ #1}{}}
-\renewcommand{\sectionmark}[1]{\markright{\thesection \ #1}{}\renewcommand{\currentTest}{#1}}
+\renewcommand{\sectionmark}[1]{%
+	\markright{\thesection\ #1}{}
+	% \renewcommand{\currentTest}{#1}
+}
 \fancyhf{}
 \fancyhead[LE,RO]{\thepage}
 \fancyhead[RE]{\sffamily\rightmark}
 \fancyhead[LO]{\sffamily\leftmark}
 \fancyfoot[C]{\scriptsize \sffamily \footline{}}
 \fancypagestyle{plain}{
-  \fancyhf{}
-  \fancyhead[LE,RO]{\thepage}
-  \fancyhead[RE]{\sffamily\rightmark}
-  \fancyhead[LO]{\sffamily\leftmark}
-  \fancyfoot[C]{\scriptsize \sffamily \footline{}}
-  \renewcommand{\headrulewidth}{0.5 pt}
+	\fancyhf{}
+	\fancyhead[LE,RO]{\thepage}
+	\fancyhead[RE]{\sffamily\rightmark}
+	\fancyhead[LO]{\sffamily\leftmark}
+	\fancyfoot[C]{\scriptsize \sffamily \footline{}}
+	\renewcommand{\headrulewidth}{0.5 pt}
 }
 \fancypagestyle{empty}{
-  \fancyhf{}
-  \fancyhead{}
-  \fancyfoot[C]{\scriptsize \sffamily \footline{}}
-  \renewcommand{\headrulewidth}{0 pt}
+	\fancyhf{}
+	\fancyhead{}
+	\fancyfoot[C]{\scriptsize \sffamily \footline{}}
+	\renewcommand{\headrulewidth}{0 pt}
 }
